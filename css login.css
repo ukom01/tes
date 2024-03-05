@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #222;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: changeBackgroundColor 10s infinite;
+}
+
+form {
+  width: 25rem;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: #383e56;
+  }
+  25% {
+    background-color: #7d5a50;
+  }
+  50% {
+    background-color: #2b4162;
+  }
+  75% {
+    background-color: #5d737e;
+  }
+  100% {
+    background-color: #6b4226;
+  }
+}
+
+.login-container {
+  max-width: 500px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transition: transform 0.45s;
+}
+
+.login-container:hover {
+  transform: scale(1.15);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  color: #fff;
+  transition: border-color 0.3s;
+  margin-bottom: 10px; /* Tambahkan margin-bottom di sini */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #4caf50;
+}
+
+/* Menggunakan nama kelas "login-button" pada tombol */
+.login-button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Menggunakan nama kelas "login-button" pada hover tombol */
+.login-button:hover {
+  background-color: #45a049;
+}
